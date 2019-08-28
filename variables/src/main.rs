@@ -1,5 +1,8 @@
 fn main() {
-    let c = 'z';
-    let z = 'ℤ';
-    let heart_eyed_cat = '😻';
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+    let tupi = (500, 6.4, 1);
+
+    let (x, y, z) = tupi;
+
+    println!("The value of y is: {}", y);
 }
