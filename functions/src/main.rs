@@ -23,4 +23,5 @@ fn five() -> i32 {
 
 fn plus_one(x: i32) -> i32 {
     x + 1
+    //x + 1; <- this is an statement not an expression (because of ;)
 }
