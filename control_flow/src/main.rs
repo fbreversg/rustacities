@@ -33,4 +33,20 @@ fn main() {
     };
 
     println!("The value of number is: {}", number);
+
+    fn_loop();
+}
+
+fn fn_loop() {
+	let mut counter = 0;
+
+    let result = loop {
+        counter += 1;
+
+        if counter == 10 {
+            break counter * 2;
+        }
+    };
+
+    println!("The result is {}", result);
 }
