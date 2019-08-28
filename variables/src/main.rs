@@ -5,4 +5,10 @@ fn main() {
     let (x, y, z) = tupi;
 
     println!("The value of y is: {}", y);
+
+    let five_hundred = tupi.0;
+
+    let six_point_four = tupi.1;
+
+    let one = tupi.2;
 }
