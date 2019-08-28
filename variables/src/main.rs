@@ -1,14 +1,6 @@
 fn main() {
-    let tup: (i32, f64, u8) = (500, 6.4, 1);
-    let tupi = (500, 6.4, 1);
-
-    let (x, y, z) = tupi;
-
-    println!("The value of y is: {}", y);
-
-    let five_hundred = tupi.0;
-
-    let six_point_four = tupi.1;
-
-    let one = tupi.2;
+    let a: [i32; 5] = [1, 2, 3, 4, 5];
+    let b = [3; 5];
+    let first = a[0];
+    let second = a[1];
 }
