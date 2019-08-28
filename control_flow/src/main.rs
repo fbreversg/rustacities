@@ -37,6 +37,8 @@ fn main() {
     fn_loop();
     fn_while();
     fn_for();
+    fn_iter();
+    fn_range();
 }
 
 fn fn_loop() {
@@ -73,4 +75,19 @@ fn fn_for() {
 
         index += 1;
     }
+}
+
+fn fn_iter() {
+    let a = [10, 20, 30, 40, 50];
+
+    for element in a.iter() {
+        println!("the value is: {}", element);
+    }
+}
+
+fn fn_range() {
+	for number in (1..4).rev() {
+        println!("{}!", number);
+    }
+    println!("LIFTOFF!!!");
 }
