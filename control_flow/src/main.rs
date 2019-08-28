@@ -35,6 +35,8 @@ fn main() {
     println!("The value of number is: {}", number);
 
     fn_loop();
+    fn_while();
+    fn_for();
 }
 
 fn fn_loop() {
@@ -49,4 +51,26 @@ fn fn_loop() {
     };
 
     println!("The result is {}", result);
+}
+
+fn fn_while() {
+	let mut number = 3;
+
+    while number != 0 {
+        println!("{}!", number);
+
+        number -= 1;
+    }
+    println!("LIFTOFF!!!");
+}
+
+fn fn_for() {
+	let a = [10, 20, 30, 40, 50];
+    let mut index = 0;
+
+    while index < 5 {
+        println!("the value is: {}", a[index]);
+
+        index += 1;
+    }
 }
